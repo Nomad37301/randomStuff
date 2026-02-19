@@ -1,6 +1,6 @@
 # Mastering Docker in a Day
 
-This documentation is prepared for the **Docker Workshop** — a hands-on guide to containerization from environment setup to deploying multi-container applications.
+This documentation is prepared for the **Dock Dock Docker: Master Docker To Dock The Docker** - a hands-on guide to containerization from environment setup to deploying multi-container applications.
 
 ## What is Docker?
 Docker is an open-source platform that allows developers to package applications and their dependencies into lightweight, portable units called **containers**. Unlike traditional virtual machines, containers share the host OS kernel, making them faster and more efficient.
@@ -8,7 +8,7 @@ Docker is an open-source platform that allows developers to package applications
 ## Why Learn Docker?
 - **Industry Standard:** Used by top companies worldwide to build, ship, and run applications consistently.
 - **DevOps Essential:** Core tool in modern CI/CD pipelines and cloud deployments.
-- **Isolation & Portability:** "It works on my machine" is no longer a problem — if it runs in a container, it runs everywhere.
+- **Isolation & Portability:** "It works on my machine" is no longer a problem if it runs in a container, it runs everywhere.
 
 ---
 
@@ -24,7 +24,7 @@ Before diving in, it helps to understand *why* Docker exists.
 | Performance | Heavier | Lightweight |
 | Isolation | Full | Process-level |
 
-> **Bottom line:** Containers are not a replacement for VMs — they solve a different problem. Containers are ideal for running applications consistently across environments.
+> **Bottom line:** Containers are not a replacement for VMs they solve a different problem. Containers are ideal for running applications consistently across environments.
 
 ---
 
@@ -57,7 +57,7 @@ Then log out and back in for changes to take effect.
 ```bash
 docker run hello-world
 ```
-If you see a welcome message from Docker — you're good to go! ✅
+If you see a welcome message from Docker you're good to go! 
 
 ---
 
@@ -67,7 +67,7 @@ If you see a welcome message from Docker — you're good to go! ✅
 A **read-only template** used to create containers. Think of it like a blueprint or a snapshot of an application and its environment.
 
 ### Container
-A **running instance** of an image. You can run multiple containers from the same image — each is isolated from the others.
+A **running instance** of an image. You can run multiple containers from the same image each is isolated from the others.
 
 ### Docker Hub
 A public registry where you can pull pre-built images (like pulling packages from npm or pip).
@@ -131,7 +131,7 @@ docker build -t my-app .
 docker run -p 3000:3000 my-app
 ```
 
-Open your browser and go to `http://localhost:3000` to see your app! 🎉
+Open your browser and go to `http://localhost:3000` to see your app! 
 
 ---
 

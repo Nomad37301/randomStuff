@@ -1,6 +1,6 @@
-# Mastering Docker in a Day
+# Dock Dock Docker : Master Docker to Dock the Docker
 
-This documentation is prepared for the **Dock Dock Docker: Master Docker To Dock The Docker** - a hands-on guide to containerization from environment setup to deploying multi-container applications.
+This documentation is prepared for the **Dock Dock Docker: Master Docker To Dock The Docker** workshop- a hands-on guide to containerization from environment setup to deploying multi-container applications.
 
 ## What is Docker?
 Docker is an open-source platform that allows developers to package applications and their dependencies into lightweight, portable units called **containers**. Unlike traditional virtual machines, containers share the host OS kernel, making them faster and more efficient.

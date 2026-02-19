@@ -83,17 +83,17 @@ A tool for defining and running **multi-container** applications using a single 
 
 ## Basic Docker Commands
 
-- `docker pull <image>` — Download an image from Docker Hub.
-- `docker images` — List all locally available images.
-- `docker run <image>` — Create and start a container from an image.
-- `docker run -d <image>` — Run a container in the background (detached mode).
-- `docker run -p 8080:80 <image>` — Map host port `8080` to container port `80`.
-- `docker ps` — List all **running** containers.
-- `docker ps -a` — List **all** containers (including stopped ones).
-- `docker exec -it <container_id> bash` — Open a shell inside a running container.
-- `docker stop <container_id>` — Gracefully stop a running container.
-- `docker rm <container_id>` — Remove a stopped container.
-- `docker rmi <image>` — Remove a locally stored image.
+- `docker pull <image>` —> Download an image from Docker Hub.
+- `docker images` —> List all locally available images.
+- `docker run <image>` —> Create and start a container from an image.
+- `docker run -d <image>` —> Run a container in the background (detached mode).
+- `docker run -p 8080:80 <image>` —> Map host port `8080` to container port `80`.
+- `docker ps` —> List all **running** containers.
+- `docker ps -a` —> List **all** containers (including stopped ones).
+- `docker exec -it <container_id> bash` —> Open a shell inside a running container.
+- `docker stop <container_id>` —> Gracefully stop a running container.
+- `docker rm <container_id>` —> Remove a stopped container.
+- `docker rmi <image>` —> Remove a locally stored image.
 
 ---
 
@@ -138,7 +138,7 @@ Open your browser and go to `http://localhost:3000` to see your app!
 ## Volumes & Port Mapping
 
 ### Port Mapping
-Containers are isolated — to access a service running inside a container, you need to map its port to your host machine.
+Containers are isolated, to access a service running inside a container, you need to map its port to your host machine.
 ```bash
 # Format: docker run -p <host_port>:<container_port> <image>
 docker run -p 8080:80 nginx

@@ -199,12 +199,3 @@ docker compose down
 # View logs from all services
 docker compose logs
 ```
-
----
-
-## What's Next?
-Now that you understand the basics of Docker, here are some recommended next steps to continue your journey:
-- **Docker Networking** — How containers talk to each other.
-- **Docker Swarm / Kubernetes** — Orchestrating containers at scale.
-- **CI/CD with Docker** — Automate image builds and deployments with GitHub Actions or GitLab CI.
-- **Docker Security** — Best practices for hardening containers in production.

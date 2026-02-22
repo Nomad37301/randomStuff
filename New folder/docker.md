@@ -100,7 +100,10 @@ A tool for defining and running **multi-container** applications using a single 
 ## Dockerfile
 
 A `Dockerfile` is how you create your own custom image.
+Lets try it, download this folder first : 
+https://drive.google.com/drive/folders/1KWId7y9bYWm87zWBAs8-3Om0JNCYRvWK?usp=drive_link
 
+And then make a file without extension named "Dockerfile" with the following content : 
 ### Basic Structure
 ```dockerfile
 # Base image
@@ -162,7 +165,10 @@ docker run -v mydata:/app/data my-app
 ## Docker Compose
 
 Docker Compose lets you manage **multiple containers** at once using a single configuration file — perfect for real-world apps (e.g., a web server + database).
+Lets try it, Download this : 
+https://drive.google.com/drive/folders/1izhz903X6WIYYmfbqWCdUtRZCfBqIiv5?usp=drive_link
 
+Then Make A File Named "docker-compose.yml" in the folder. then follow the code below : 
 ### Example: `docker-compose.yml`
 ```yaml
 version: "3"

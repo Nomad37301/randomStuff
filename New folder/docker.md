@@ -171,24 +171,16 @@ https://drive.google.com/drive/folders/1izhz903X6WIYYmfbqWCdUtRZCfBqIiv5?usp=dri
 Then Make A File Named "docker-compose.yml" in the folder. then follow the code below : 
 ### Example: `docker-compose.yml`
 ```yaml
-version: "3"
+version: '3.8'
 services:
-  web:
+  arknights-terminal:
     build: .
+    container_name: arknights_ctf
     ports:
       - "3000:3000"
-    depends_on:
-      - db
-
-  db:
-    image: postgres:15
-    environment:
-      POSTGRES_PASSWORD: secret
     volumes:
-      - pgdata:/var/lib/postgresql/data
-
-volumes:
-  pgdata:
+      - ./db:/app/db
+    restart: always
 ```
 
 ### Compose Commands

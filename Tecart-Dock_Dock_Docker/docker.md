@@ -131,10 +131,10 @@ CMD ["node", "index.js"]
 docker build -t my-app .
 
 # Run the container and map port
-docker run -p 3000:3000 my-app
+docker run -p 8000:80 my-app
 ```
 
-Open your browser and go to `http://localhost:3000` to see your app! 
+Open your browser and go to `http://localhost:8000` to see your app! 
 
 ---
 
@@ -151,13 +151,13 @@ Then open `http://localhost:8080` in your browser.
 ### Volumes
 By default, data inside a container is **lost** when the container is removed. Volumes solve this by persisting data on your host machine.
 ```bash
-# Mount a local folder to a path inside the container
+# Mount a local folder to a path inside the container (blind mount)
 docker run -v /your/local/path:/app/data my-app
 ```
 Or use a named volume:
 ```bash
 docker volume create mydata
-docker run -v mydata:/app/data my-app
+docker run -d -p 8000:80 -v mydata:usr/share/nginx/html nginx
 ```
 
 ---
